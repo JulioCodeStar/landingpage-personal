@@ -25,7 +25,7 @@ export const site = {
 
   github: "https://github.com/JulioCodeStar",
   linkedin: "https://www.linkedin.com/in/julio-vargas-2b1a42203", // EDITA: verifica
-  email: "tu-correo@ejemplo.com", // EDITA
+  email: "codestart2024@gmail.com", // EDITA
   cv: "/cv.pdf", // EDITA: pon tu CV en /public/cv.pdf (o deja "" para ocultar el botón)
 
   sobreMi:

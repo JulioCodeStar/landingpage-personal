@@ -1,0 +1,90 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de desarrollo full-stack">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0e1a"/>
+      <stop offset="1" stop-color="#0d1326"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0f3df5"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+    <linearGradient id="blue2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#6b8bff"/>
+      <stop offset="1" stop-color="#22d3ee"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0" stop-color="#0f3df5" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0f3df5" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6"/>
+    </filter>
+  </defs>
+
+  <!-- fondo -->
+  <rect width="400" height="400" rx="20" fill="url(#bg)"/>
+  <circle cx="200" cy="160" r="150" fill="url(#glow)"/>
+
+  <!-- rejilla sutil -->
+  <g opacity="0.06" stroke="#ffffff" stroke-width="1">
+    <path d="M0 100 H400 M0 200 H400 M0 300 H400"/>
+    <path d="M100 0 V400 M200 0 V400 M300 0 V400"/>
+  </g>
+
+  <!-- glow bajo el editor -->
+  <ellipse cx="200" cy="300" rx="120" ry="20" fill="url(#blue)" opacity="0.25" filter="url(#soft)"/>
+
+  <!-- ventana editor de código -->
+  <g>
+    <rect x="80" y="120" width="200" height="150" rx="14" fill="#111a30" stroke="#1e2b4d" stroke-width="2"/>
+    <!-- barra superior -->
+    <rect x="80" y="120" width="200" height="28" rx="14" fill="#16213d"/>
+    <rect x="80" y="134" width="200" height="14" fill="#16213d"/>
+    <circle cx="98" cy="134" r="4" fill="#ff5f57"/>
+    <circle cx="112" cy="134" r="4" fill="#febc2e"/>
+    <circle cx="126" cy="134" r="4" fill="#28c840"/>
+    <!-- líneas de código -->
+    <g stroke-linecap="round" stroke-width="5">
+      <line x1="98" y1="166" x2="138" y2="166" stroke="url(#blue2)"/>
+      <line x1="146" y1="166" x2="186" y2="166" stroke="#46557f"/>
+      <line x1="98" y1="184" x2="120" y2="184" stroke="#46557f"/>
+      <line x1="128" y1="184" x2="210" y2="184" stroke="url(#blue)"/>
+      <line x1="112" y1="202" x2="160" y2="202" stroke="#46557f"/>
+      <line x1="168" y1="202" x2="200" y2="202" stroke="url(#blue2)"/>
+      <line x1="112" y1="220" x2="148" y2="220" stroke="url(#blue)"/>
+      <line x1="98" y1="238" x2="170" y2="238" stroke="#46557f"/>
+    </g>
+  </g>
+
+  <!-- móvil (React Native) -->
+  <g transform="translate(286 150)">
+    <rect x="0" y="0" width="54" height="104" rx="12" fill="#111a30" stroke="url(#blue)" stroke-width="2"/>
+    <rect x="8" y="14" width="38" height="20" rx="4" fill="url(#blue)" opacity="0.8"/>
+    <rect x="8" y="40" width="38" height="6" rx="3" fill="#46557f"/>
+    <rect x="8" y="52" width="28" height="6" rx="3" fill="#46557f"/>
+    <rect x="8" y="68" width="38" height="22" rx="5" fill="#16213d" stroke="#1e2b4d"/>
+    <circle cx="27" cy="98" r="2.5" fill="#46557f"/>
+  </g>
+
+  <!-- base de datos -->
+  <g transform="translate(46 196)">
+    <ellipse cx="26" cy="10" rx="26" ry="9" fill="url(#blue2)"/>
+    <path d="M0 10 V46 a26 9 0 0 0 52 0 V10" fill="#111a30" stroke="#1e2b4d" stroke-width="2"/>
+    <ellipse cx="26" cy="10" rx="26" ry="9" fill="none" stroke="#22d3ee" stroke-width="2"/>
+    <ellipse cx="26" cy="28" rx="26" ry="9" fill="none" stroke="#1e2b4d" stroke-width="2"/>
+  </g>
+
+  <!-- nodos / conexiones -->
+  <g stroke="url(#blue)" stroke-width="2" opacity="0.6" fill="none">
+    <path d="M72 226 C 100 240, 110 250, 130 250"/>
+    <path d="M280 200 C 300 200, 300 190, 300 175"/>
+  </g>
+  <circle cx="72" cy="226" r="4" fill="#22d3ee"/>
+  <circle cx="280" cy="200" r="4" fill="#6b8bff"/>
+
+  <!-- símbolos flotantes -->
+  <text x="120" y="86" font-family="monospace" font-size="26" font-weight="700" fill="url(#blue2)">&lt;/&gt;</text>
+  <text x="232" y="300" font-family="monospace" font-size="22" font-weight="700" fill="#46557f">{ }</text>
+  <circle cx="300" cy="120" r="5" fill="#6b8bff"/>
+  <circle cx="64" cy="150" r="4" fill="#22d3ee" opacity="0.8"/>
+</svg>

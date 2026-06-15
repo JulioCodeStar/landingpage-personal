@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🐼 PandaNoir — Portafolio
 
-## Getting Started
+Portafolio personal de **PandaNoir**, desarrollador full-stack.
+Diseño minimalista y moderno, modo oscuro/claro y animaciones suaves.
 
-First, run the development server:
+![Next.js](https://img.shields.io/badge/Next.js-16-black?style=flat&logo=next.js&logoColor=white)
+![React](https://img.shields.io/badge/React-19-20232a?style=flat&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38B2AC?style=flat&logo=tailwind-css&logoColor=white)
+![shadcn/ui](https://img.shields.io/badge/shadcn/ui-000?style=flat)
+
+🔗 **Demo:** _(añade aquí tu URL de Vercel cuando despliegues)_
+
+---
+
+## ✨ Características
+
+- Diseño minimalista con acento azul eléctrico y brillos sutiles
+- Tema **oscuro / claro / sistema** con `next-themes`
+- Hero con degradado animado, marquee de tecnologías y glows de fondo
+- Secciones: Servicios, Proyectos, Sobre mí, Testimonios y Contacto
+- Formulario de contacto funcional (vía `mailto`, sin backend)
+- Scroll suave y animaciones de aparición respetando _reduce motion_
+- Renderizado del lado del servidor (rápido y bueno para SEO)
+
+## 🛠️ Stack
+
+- [Next.js 16](https://nextjs.org/) (App Router · Turbopack)
+- [React 19](https://react.dev/) + [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS v4](https://tailwindcss.com/)
+- [shadcn/ui](https://ui.shadcn.com/)
+
+## 🚀 Empezar
+
+Requisitos: Node.js 20+ y [pnpm](https://pnpm.io/).
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+# Clonar
+git clone https://github.com/JulioCodeStar/portfolio.git
+cd portfolio
+
+# Instalar dependencias
+pnpm install
+
+# Levantar en desarrollo
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abre [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ✏️ Personalizar
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Todo el contenido vive en un solo archivo: **`lib/site.ts`**.
+Edita ahí tu nombre, alias, enlaces, servicios, proyectos y testimonios
+(busca los comentarios `// EDITA`).
 
-## Learn More
+Imágenes que van en la carpeta `public/`:
 
-To learn more about Next.js, take a look at the following resources:
+| Archivo | Para qué |
+|---|---|
+| `public/logo.png` | Logo del header |
+| `public/about-dev.svg` | Ilustración de la sección "Sobre mí" |
+| `public/cv.pdf` | Tu CV (botón "Descargar CV") |
+| `app/icon.png` | Favicon (opcional: usa el mismo logo) |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Los colores y animaciones están al final de `app/globals.css`
+(variable `--accent` para el color de acento).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📦 Build de producción
 
-## Deploy on Vercel
+```bash
+pnpm build
+pnpm start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ☁️ Despliegue
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Pensado para [Vercel](https://vercel.com/): conecta el repositorio y haz deploy.
+Cada `push` a `main` actualiza el sitio automáticamente.
+
+---
+
+## 📫 Contacto
+
+- **GitHub:** [@JulioCodeStar](https://github.com/JulioCodeStar)
+- **LinkedIn:** [Julio Vargas](https://www.linkedin.com/in/julio-vargas-2b1a42203)
+
+---
+
+<p align="center">Hecho con 🐼 por <strong>PandaNoir</strong></p>
